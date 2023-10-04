@@ -1,6 +1,7 @@
 # Unit 1 Assessment: Written Questions
 
 > To select an answer for the multiple choice questions, put an `x` inside the square brackets (`[ ]`) like this:
+>
 > ```md
 > - [ ] This is the answer!
 > ```
@@ -14,7 +15,7 @@
 Which statement is true about JavaScript?
 
 - [ ] **A.** JavaScript is case insensitive, so `true` is the same as `True`.
-- [ ] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
+- [x] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
 - [ ] **C.** JavaScript requires you to end all statements with a semicolon (`;`).
 - [ ] **D.** All of the above are true.
 - [ ] **E.** None of the above are true.
@@ -30,9 +31,9 @@ let sum = 1;
 Which of these lines of code will cause `sum` to have a value of `2`? You can select more than one
 answer.
 
-- [ ] **A.** `sum++`
-- [ ] **B.** `sum += 1`
-- [ ] **C.** `sum = sum + 1`
+- [x] **A.** `sum++`
+- [x] **B.** `sum += 1`
+- [x] **C.** `sum = sum + 1`
 - [ ] **D.** All of the above
 - [ ] **E.** Some of the above
 
@@ -41,11 +42,11 @@ answer.
 What's the output of the program below?
 
 ```js
-const result = 1 < 100 || 'hello' === 'hi';
+const result = 1 < 100 || "hello" === "hi";
 console.log(result);
 ```
 
-- [ ] **A.** `true`
+- [x] **A.** `true`
 - [ ] **B.** `false`
 - [ ] **C.** `undefined`
 - [ ] **D.** N/A because the code has an error
@@ -55,16 +56,16 @@ console.log(result);
 What's the output of the program below?
 
 ```js
-const word = '';
+const word = "";
 if (word) {
-  console.log('yay!');
+  console.log("yay!");
 } else {
-  console.log('no :(');
+  console.log("no :(");
 }
 ```
 
 - [ ] **A.** `yay!`
-- [ ] **B.** `no :(`
+- [x] **B.** `no :(`
 - [ ] **C.** An empty line
 - [ ] **D.** N/A because the code has an error
 
@@ -88,7 +89,7 @@ cherry
 ```
 
 - [ ] **A.** `const fruit in fruits`
-- [ ] **B.** `const fruit of fruits`
+- [x] **B.** `const fruit of fruits`
 - [ ] **C.** `let fruit = 0; fruit < fruits.length; fruit++`
 - [ ] **D.** None of the above
 
@@ -99,14 +100,14 @@ correct, pick the one you think is **most accurate**.
 
 ```js
 function makeWordArray(phrase) {
-  return phrase.split(' ');
+  return phrase.split(" ");
 }
 ```
 
 - [ ] **A.** Nothing happens because the program errors out.
 - [ ] **B.** It defines a function called `makeWordArray` and converts `phrase` into an array of words.
 - [ ] **C.** It defines a function called `makeWordArray` and outputs a word array.
-- [ ] **D.** It defines a function called `makeWordArray` but nothing else happens.
+- [x] **D.** It defines a function called `makeWordArray` but nothing else happens.
 
 ### A.7. Identify the error
 
@@ -118,7 +119,7 @@ console.log'hi';
 // hi
 ```
 
-- [ ] **A.** The code causes an error because there should be parentheses around `'hi'`.
+- [x] **A.** The code causes an error because there should be parentheses around `'hi'`.
 - [ ] **B.** The code causes an error because `console.log` isn't a function.
 - [ ] **C.** The code causes an error because the code will run but it won't output anything.
 - [ ] **D.** There is no error; the code generates the expected output.
@@ -128,25 +129,25 @@ console.log'hi';
 Which statement best describes the error below?
 
 ```js
-const fruits = ['apple', 'berry', 'cherry'];
-console.log(fruits[fruits.indexOf('apple')]);
+const fruits = ["apple", "berry", "cherry"];
+console.log(fruits[fruits.indexOf("apple")]);
 // expected output:
 // apple
 ```
 
 - [ ] **A.** The code causes an error because `fruits[fruits.indexOf('apple')]` isn't valid
-  JavaScript syntax.
+      JavaScript syntax.
 - [ ] **B.** The code causes an error because `fruits.indexOf('apple')` doesn't return a valid
-  index number.
+      index number.
 - [ ] **C.** The code causes an error because it outputs `0` instead of the expected output.
-- [ ] **D.** There is no error; the code generates the expected output.
+- [x] **D.** There is no error; the code generates the expected output.
 
 ### A.9. Identify the error
 
 Which statement best describes the error below?
 
 ```js
-const words = ['js', 'html', 'css'];
+const words = ["js", "html", "css"];
 for (const w of words) {
   console.log(words.toUpperCase());
 }
@@ -157,8 +158,8 @@ for (const w of words) {
 ```
 
 - [ ] **A.** The code causes an error because `w` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
-  valid array function.
+- [x] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
+      valid array function.
 - [ ] **C.** The code causes an error because it will output `['JS', 'HTML', 'CSS']` three times.
 - [ ] **D.** There is no error; the code generates the expected output.
 
@@ -178,7 +179,7 @@ console.log(numStrings);
 ```
 
 - [ ] **A.** The code causes an error because `numStrings` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
+- [x] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
 - [ ] **C.** The code causes an error because `i++` isn't valid JavaScript syntax.
 - [ ] **D.** There is no error; the code generates the expected output.
 
@@ -198,19 +199,19 @@ function outputArgs(a, b, c) {
     console.log(c);
   }
 }
-outputArgs('hi', 'bye');
+outputArgs("hi", "bye");
 // expected output:
 // hi
 // bye
 ```
 
 - [ ] **A.** The code causes an error because `outputArgs` takes in three arguments but it's being
-  called with just two.
+      called with just two.
 - [ ] **B.** The code causes an error because it will output `hi`, `bye`, and `undefined` instead
-  of the expected output.
+      of the expected output.
 - [ ] **C.** The code causes an error because the `a`, `b`, and `c` variables haven't been
-  initialized.
-- [ ] **D.** There is no error; the code generates the expected output.
+      initialized.
+- [x] **D.** There is no error; the code generates the expected output.
 
 ## B. Free response
 
@@ -225,13 +226,13 @@ Functions can be used to create named blocks of code that can be executed/reused
 **_What is the difference between `console.log` and `return`?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+'console.log' will send the value to the console but 'return' will not do that. 'return' will stop the code from continuing on. It is more practical to use 'return' in day to day situations and better to use 'console.log' when testing your code to see what it send to the console.
 ```
 
 **_What's the difference between defining and calling a function?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Defining a function will save that function in your code so you can use at any time but it will not run the code. Calling a function will use the arguments to actually run the code and provide you with a result.
 ```
 
 ### B.2. Describe these data types.
@@ -241,25 +242,25 @@ Write a short description of the following data types:
 **_String_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+A string is used to represent text in JavaScript. String can contain letters, numbers, symbols and spaces but it needs to enclosed with either single or doubles quotes.
 ```
 
 **_Number_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+A number are integers or decimal numbers.
 ```
 
 **_Boolean_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+A boolean is a data type that will either provide you with 'true' or 'false'. It typical is used for conditional statements or for evaluating expressions.
 ```
 
 **_Array_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+An array is used to store a collection of values. Elements in an array can be any data type and each element is accessed by an index starting from 0.
 ```
 
 ### B.3. Trace the value of `x`
@@ -282,7 +283,7 @@ completed for you.
 
 ```
 Initial values: y = 0, x = 5
-1:              y = 1, x = ??
-2:              y = 2, x = ??
-3:              y = 3, x = ??
+1:              y = 1, x = 10
+2:              y = 2, x = 15
+3:              y = 3, x = 20
 ```
