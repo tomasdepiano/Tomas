@@ -56,7 +56,15 @@ function censorVowels(string) {
 // Ex.:
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
-function stickyCase(string) {}
+function stickyCase(string) {
+  string.forEach(function (letter, index) {
+    if (index % 2 === 0) {
+      return letter;
+    } else {
+      return letter.toUpperCase();
+    }
+  });
+}
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
@@ -70,7 +78,27 @@ function stickyCase(string) {}
 // Ex.:
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
-function leetspeak(string) {}
+function leetspeak(string) {
+  const leetMap = {
+    a: "4",
+    e: "3",
+    i: "1",
+    o: "0",
+    s: "5",
+    t: "7",
+  };
+  string = string.toLowerCase();
+  let result = "";
+  for (let i = 0; i < string.length; i++) {
+    let character = string[i];
+    if (leetMap[character]) {
+      result += leetMap[character];
+    } else {
+      result += character;
+    }
+  }
+  return result;
+}
 
 export {
   approximatelyEqual,

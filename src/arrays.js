@@ -44,7 +44,7 @@ function itemsWithLength(items, length) {
 //   everyOtherItem(['a', 'b', 'c', 'd', 'e']);
 //   => ['a', 'c', 'e']
 function everyOtherItem(items) {
-  return items.map(function (letter, index) {
+  return items.filter(function (letter, index) {
     if (index % 2 !== 0) {
       delete letter[index];
     }
@@ -57,7 +57,13 @@ function everyOtherItem(items) {
 // Ex.:
 //   findWordsStartingWith(['apple', 'banana', 'kiwi', 'pear', 'bacon'], 'b');
 //   => [1, 4]
-function findWordsStartingWith(words, letter) {}
+function findWordsStartingWith(words, letter) {
+  return words.map(function (word, index) {
+    if (word[0] === letter) {
+      return index;
+    }
+  });
+}
 
 // Return the `n` smallest values in the array in descending order (largest
 // numbers first). Assume that `n` will always be less than the length of the
@@ -73,14 +79,27 @@ function smallestNItems(items, n) {}
 // Ex.:
 //   findIndex(['a', 'b', 'c', 'a', 'b', 'c'], 'c');
 //   => 2
-function findIndex(items, value) {}
+function findIndex(items, value) {
+  for (let i = 0; i < items.length; i++) {
+    if (items[i] === value) {
+      return i;
+    }
+  }
+  return undefined;
+}
 
 // Given a start number and stop number, return a new array containing all the numbers
 // between the start and stop number.
 // Ex.:
 //   range(1, 5);
 //   => [1, 2, 3, 4, 5]
-function range(start, stop) {}
+function range(start, stop) {
+  let outcome = [];
+  for (let i = start; i <= stop; i++) {
+    outcome.push(i);
+  }
+  return outcome;
+}
 
 export {
   bWords,
